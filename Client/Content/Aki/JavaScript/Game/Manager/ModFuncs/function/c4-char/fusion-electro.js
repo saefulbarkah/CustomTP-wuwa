@@ -14,4 +14,4 @@ const c4FusionElectroBossLoop = (count = 50) => {
   return data;
 };
 
-module.exports = { c4FusionElectroBossLoop: c4FusionElectroBossLoop };
+module.exports = { c4FusionElectroBossLoop };

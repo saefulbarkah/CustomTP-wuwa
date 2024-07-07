@@ -12,7 +12,7 @@ const {
   } = require('../../data/c1-monster');
 const { getDailyFarmEchos } = require('../utils/helper');
 
-const FusionFarm = () => {
+const VoidThunder = () => {
   return getDailyFarmEchos({
     data: [
       flautist,
@@ -24,8 +24,8 @@ const FusionFarm = () => {
       vanguardJunrock,
       trafficIlluminator,
     ].flat(),
-    filename: ' Fusion Set Farm',
+    filename: ' C3 Void thunder Farm',
   });
 };
 
-module.exports = { FusionFarm };
+module.exports = { VoidThunder };

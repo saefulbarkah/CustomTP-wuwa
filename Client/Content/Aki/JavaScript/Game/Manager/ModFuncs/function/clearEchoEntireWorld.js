@@ -118,6 +118,4 @@ const clearEchoEntireWorld = (withBosses) => {
   });
 };
 
-return console.log(clearEchoEntireWorld({ withBosses: true }));
-
 module.exports = { clearEchoEntireWorld };
