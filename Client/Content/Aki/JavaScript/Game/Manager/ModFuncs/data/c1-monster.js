@@ -15,6 +15,7 @@ const clangBang = require('./c1/clangBang.json'),
   trafficIlluminator = require('./c1/trafficIluminator.json'),
   whiffWhaff = require('./c1/whiffWhaff.json'),
   youngRoseroom = require('./c1/youngRosesroom.json'),
+  vanguardJunrock = require('./c1/vanguardJunrock.json'),
   zigZag = require('./c1/zigZag.json');
 
 module.exports = {
@@ -36,4 +37,5 @@ module.exports = {
   whiffWhaff,
   youngRoseroom,
   zigZag,
+  vanguardJunrock,
 };

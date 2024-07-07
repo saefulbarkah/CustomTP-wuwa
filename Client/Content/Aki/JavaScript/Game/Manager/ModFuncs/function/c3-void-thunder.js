@@ -1,7 +1,7 @@
-const { Flautist, VioletFeatheredHeron } = require('../data/c3-monster');
+const { violetFeatheredHeron, flautist } = require('../data/c3-monster');
 
 const C3VoidThunderFarm = () => {
-  const monsterLists = [...Flautist, ...VioletFeatheredHeron];
+  const monsterLists = [...flautist, ...violetFeatheredHeron];
   const monstCount = monsterLists.length;
   const data = [];
   for (let index = 0; index < monstCount; index++) {

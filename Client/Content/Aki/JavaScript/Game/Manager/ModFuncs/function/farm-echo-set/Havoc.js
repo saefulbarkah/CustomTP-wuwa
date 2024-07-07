@@ -1,15 +1,15 @@
 const {
-  GlacioPrism,
-  HavocPrism,
-  YoungRoseshroom,
-  Excarat,
+  glacioPrism,
+  havocPrism,
+  youngRoseroom,
+  excarat,
 } = require('../../data/c1-monster');
 const {
   havocDreadmane,
   Tambourinist,
   roseshRoom,
 } = require('../../data/c3-monster');
-const { getDailyFarmEchos } = require('./helper');
+const { getDailyFarmEchos } = require('../utils/helper');
 
 const HavocFarm = () => {
   return getDailyFarmEchos({
@@ -17,10 +17,10 @@ const HavocFarm = () => {
       havocDreadmane,
       Tambourinist,
       roseshRoom,
-      GlacioPrism,
-      HavocPrism,
-      YoungRoseshroom,
-      Excarat,
+      glacioPrism,
+      havocPrism,
+      youngRoseroom,
+      excarat,
     ].flat(),
     filename: ' Havoc Set Farm',
   });

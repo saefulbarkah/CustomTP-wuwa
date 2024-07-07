@@ -1,16 +1,16 @@
 const {
-  Chaserazor,
-  Spearback,
-  GeohideSaurian,
-  StonewallBracer,
+  chaserazor,
+  viridBladeSaurian,
+  spearBack,
+  stoneWallBracer,
 } = require('../data/c3-monster');
 
 const C3MoonlightFarm = () => {
   const monsterLists = [
-    ...Chaserazor,
-    ...GeohideSaurian,
-    ...Spearback,
-    ...StonewallBracer,
+    ...chaserazor,
+    ...viridBladeSaurian,
+    ...spearBack,
+    ...stoneWallBracer,
   ];
   const monstCount = monsterLists.length;
   const data = [];
