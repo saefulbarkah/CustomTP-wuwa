@@ -8,13 +8,14 @@ const puerts_1 = require('puerts'),
   ModManager_1 = require('../ModManager'),
   ModCustomTp_1 = require('./ModCustomTp');
 
-const { VoidThunderFarm } = require('./function/c4-void-thunder');
-const { C4SupportFarm } = require('./function/c4-support-farm');
-const { C3VoidThunderFarm } = require('./function/c3-void-thunder');
-const { C3MoonlightFarm } = require('./function/c3-moonlight-farm');
-const { ResonanceBeacon, ResonanceNexus } = require('./data/waypoint');
-const { HavocFarm } = require('./function/farm-echos/Havoc');
-const { FusionFarm } = require('./function/farm-echos/Fusion');
+const { VoidThunderFarm } = require('./function/c4-void-thunder'),
+  { C4SupportFarm } = require('./function/c4-support-farm'),
+  { C3VoidThunderFarm } = require('./function/c3-void-thunder'),
+  { C3MoonlightFarm } = require('./function/c3-moonlight-farm'),
+  { ResonanceBeacon, ResonanceNexus } = require('./data/waypoint'),
+  HavocFarm = require('./function/farm-echos/Havoc'),
+  { clearEchoEntireWorld } = require('./function/clearEchoEntireWorld'),
+  FusionFarm = require('./function/farm-echos/Fusion');
 
 class ModTpFile {
   static C4_VoidThunderLoop = VoidThunderFarm(50);
@@ -25,6 +26,9 @@ class ModTpFile {
   static ResonanceNexus = ResonanceNexus;
   static HavocFarm = HavocFarm();
   static FusionFarm = FusionFarm();
+  static clearEchoEntireWorld = clearEchoEntireWorld({
+    withBosses: true,
+  });
 
   static CustomTpList = [
     this.C4_VoidThunderLoop,

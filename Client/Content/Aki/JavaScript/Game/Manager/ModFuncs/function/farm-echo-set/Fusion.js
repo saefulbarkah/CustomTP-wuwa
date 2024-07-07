@@ -9,7 +9,7 @@ const {
   VioletFeatheredHeron,
   ViridBladeSaurian,
 } = require('../../data/c3-monster');
-const { getDailyFarmEchos } = require('./helper');
+const { getDailyFarmEchos } = require('../utils/helper');
 
 const FusionFarm = () => {
   return getDailyFarmEchos({
