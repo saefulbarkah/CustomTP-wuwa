@@ -1,26 +1,33 @@
 const {
-  FusionDreadmane,
-  SnipSnap,
-  SpectroPrism,
-  TrafficIlluminator,
-} = require('../../data/c1-monster');
-const {
-  HavocDreadmane,
-  VioletFeatheredHeron,
-  ViridBladeSaurian,
-} = require('../../data/c3-monster');
+    viridBladeSaurian,
+    havocDreadmane,
+    violetFeatheredHeron,
+  } = require('../../data/c3-monster'),
+  {
+    fusionDreadmane,
+    snipSnap,
+    spectroPrism,
+    trafficIlluminator,
+    electroPredator,
+    fusionPrism,
+    lavaLava,
+  } = require('../../data/c1-monster');
 const { getDailyFarmEchos } = require('../utils/helper');
 
 const FusionFarm = () => {
   return getDailyFarmEchos({
     data: [
-      ViridBladeSaurian,
-      HavocDreadmane,
-      VioletFeatheredHeron,
-      FusionDreadmane,
-      SnipSnap,
-      SpectroPrism,
-      TrafficIlluminator,
+      viridBladeSaurian,
+      havocDreadmane,
+      violetFeatheredHeron,
+      fusionDreadmane,
+      snipSnap,
+      spectroPrism,
+      trafficIlluminator,
+      electroPredator,
+      fusionPrism,
+      snipSnap,
+      lavaLava,
     ].flat(),
     filename: ' Fusion Set Farm',
   });
