@@ -1,23 +1,39 @@
-const { Excarat } = require('./c1/Excarat');
-const { FusionDreadmane } = require('./c1/FusionDreadmane');
-const { GlacioPrism } = require('./c1/GlacioPrism');
-const { HavocPrism } = require('./c1/HavocPrism');
-const { Hooscamp2 } = require('./c1/HoosCamp2');
-const { SnipSnap } = require('./c1/SnipSnap');
-const { SpectroPrism } = require('./c1/SpectroPrism');
-const { TrafficIlluminator } = require('./c1/TrafficIluminator');
-const { WhiffWhaff } = require('./c1/WhiffWhaff');
-const { YoungRoseshroom } = require('./c1/YoungRosesroom');
+const clangBang = require('./c1/clangBang.json'),
+  dwarfCassowary = require('./c1/dwarfCassowary.json'),
+  electroPredator = require('./c1/electroPredator.json'),
+  excarat = require('./c1/excarat.json'),
+  fissionJunrock = require('./c1/fissionJunrock.json'),
+  fusionDreadmane = require('./c1/fusionDreadmane.json'),
+  fusionPrism = require('./c1/fusionPrism.json'),
+  glacioPrism = require('./c1/glacioPrism.json'),
+  gulPuff = require('./c1/gulPuff.json'),
+  havocPrism = require('./c1/havocPrism.json'),
+  hoosCamp2 = require('./c1/hoosCamp2.json'),
+  lavaLava = require('./c1/lavaLava.json'),
+  snipSnap = require('./c1/snipSnap.json'),
+  spectroPrism = require('./c1/spectroPrism.json'),
+  trafficIlluminator = require('./c1/trafficIlluminator.json'),
+  whiffWhaff = require('./c1/whiffWhaff.json'),
+  youngRoseroom = require('./c1/youngRoseroom.json'),
+  zigZag = require('./c1/zigZag.json');
 
 module.exports = {
-  YoungRoseshroom,
-  Excarat,
-  HavocPrism,
-  GlacioPrism,
-  FusionDreadmane,
-  TrafficIlluminator,
-  SnipSnap,
-  WhiffWhaff,
-  SpectroPrism,
-  Hooscamp2,
+  clangBang,
+  dwarfCassowary,
+  electroPredator,
+  excarat,
+  fissionJunrock,
+  fusionDreadmane,
+  fusionPrism,
+  glacioPrism,
+  gulPuff,
+  havocPrism,
+  hoosCamp2,
+  lavaLava,
+  snipSnap,
+  spectroPrism,
+  trafficIlluminator,
+  whiffWhaff,
+  youngRoseroom,
+  zigZag,
 };

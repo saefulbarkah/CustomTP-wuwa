@@ -5,18 +5,18 @@ const {
   Excarat,
 } = require('../../data/c1-monster');
 const {
-  HavocDreadmane,
-  Roseshroom,
+  havocDreadmane,
   Tambourinist,
+  roseshRoom,
 } = require('../../data/c3-monster');
 const { getDailyFarmEchos } = require('./helper');
 
 const HavocFarm = () => {
   return getDailyFarmEchos({
     data: [
-      HavocDreadmane,
+      havocDreadmane,
       Tambourinist,
-      Roseshroom,
+      roseshRoom,
       GlacioPrism,
       HavocPrism,
       YoungRoseshroom,

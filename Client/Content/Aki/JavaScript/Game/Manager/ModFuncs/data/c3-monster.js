@@ -1,25 +1,35 @@
-const Flautist = require('./c3/Flautist');
-const VioletFeatheredHeron = require('./c3/VioletFeatheredHeron');
-const { Chaserazor } = require('./c3/Chaserazor');
-const { ViridBladeSaurian } = require('./c3/GeohideSaurian');
-const { ChasmGuardian } = require('./c3/ChasmGuardian');
-const { Spearback } = require('./c3/Spearback');
-const { StonewallBracer } = require('./c3/StoneWall');
-const { HavocDreadmane } = require('./c3/HavocDeadMane');
-const { Roseshroom } = require('./c3/RoseshRoom');
-const { Tambourinist } = require('./c3/Tambourinist');
-const { HoochiefCyclone } = require('./c3/HookChief');
+const Tambourinist = require('./c3/Tambourinist.json'),
+  viridBladeSaurian = require('./c3/virid-blade-saurian.json'),
+  violetFeatheredHeron = require('./c3/violet-feathered-heron.json'),
+  stoneWallBracer = require('./c3/StonewallBracer.json'),
+  spearBack = require('./c3/Spearback.json'),
+  hoochiefCyclone = require('./c3/hoochief-cyclone.json'),
+  havocDreadmane = require('./c3/havocDreadmane.json'),
+  flautist = require('./c3/flautist.json'),
+  chasmGuardian = require('./c3/chasmGuardian.json'),
+  chaserazor = require('./c3/chaserazor.json'),
+  rocksteadyGuardian = require('./c3/rocksteadyGuardian.json'),
+  redEcho = require('./c3/redEcho.json'),
+  lumiscaleConstruct = require('./c3/lumiscaleConstruct.json'),
+  glacioDreadmane = require('./c3/glacioDreadmane.json'),
+  lightCrusher = require('./c3/lightCrusher.json'),
+  roseshRoom = require('./c3/Roseshroom.json');
 
 module.exports = {
-  VioletFeatheredHeron,
-  Flautist,
-  Chaserazor,
-  ViridBladeSaurian,
-  ChasmGuardian,
-  Spearback,
-  StonewallBracer,
-  HavocDreadmane,
-  Roseshroom,
+  lightCrusher,
+  glacioDreadmane,
+  lumiscaleConstruct,
+  chaserazor,
+  redEcho,
+  rocksteadyGuardian,
+  violetFeatheredHeron,
+  viridBladeSaurian,
+  spearBack,
+  stoneWallBracer,
+  chasmGuardian,
   Tambourinist,
-  HoochiefCyclone,
+  havocDreadmane,
+  flautist,
+  hoochiefCyclone,
+  roseshRoom,
 };
