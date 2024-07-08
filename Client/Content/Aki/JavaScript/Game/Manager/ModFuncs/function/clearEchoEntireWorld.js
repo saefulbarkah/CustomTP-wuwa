@@ -75,7 +75,6 @@ let listMonster = [
   ...viridBladeSaurian,
 ];
 const {
-  BellBorne,
   FeilianBeringal,
   ImpermanenceHeron,
   InfernoRider,
@@ -93,7 +92,6 @@ const clearEchoEntireWorld = (withBosses) => {
     let c4Bosss = [];
     for (let index = 0; index < listMonster.length; index++) {
       c4Bosss.push(
-        BellBorne,
         FeilianBeringal,
         ImpermanenceHeron,
         InfernoRider,
