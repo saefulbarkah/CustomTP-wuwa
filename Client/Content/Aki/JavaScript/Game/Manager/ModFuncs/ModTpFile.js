@@ -1,12 +1,12 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: !0 }),
   (exports.ModTpFile = void 0);
-// const puerts_1 = require('puerts'),
-//   UE = require('ue'),
-//   Info_1 = require('../../../Core/Common/Info'),
-//   Log_1 = require('../../../Core/Common/Log'),
-//   ModManager_1 = require('../ModManager'),
-//   ModCustomTp_1 = require('./ModCustomTp');
+const puerts_1 = require('puerts'),
+  UE = require('ue'),
+  Info_1 = require('../../../Core/Common/Info'),
+  Log_1 = require('../../../Core/Common/Log'),
+  ModManager_1 = require('../ModManager'),
+  ModCustomTp_1 = require('./ModCustomTp');
 
 const { VoidThunderFarm } = require('./function/c4-void-thunder'),
   { C4SupportFarm } = require('./function/c4-support-farm'),
