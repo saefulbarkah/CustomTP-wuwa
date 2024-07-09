@@ -115,7 +115,7 @@ const clearEchoEntireWorld = ({
     });
   }
   return getDailyFarmEchos({
-    data: [listMonster.splice(0, 20)].flat(),
+    data: [listMonster].flat(),
     filename: filename,
   });
 };
