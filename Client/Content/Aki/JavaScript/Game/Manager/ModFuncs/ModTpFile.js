@@ -23,7 +23,7 @@ class ModTpFile {
   static C4_SupportLoop = C4SupportFarm(50);
   static C4_FusionElectroFarm = c4FusionElectroBossLoop(99999);
   static C3_VoidThunderFarm = C3VoidThunderFarm();
-  static C3_MoonlightFarm = C3MoonlitFarm();
+  static C3_MoonlitFarm = C3MoonlitFarm();
   static HavocFarm = HavocFarm();
   static FusionFarm = FusionFarm();
   static clearEchoEntireWorld = clearEchoEntireWorld();
@@ -37,7 +37,7 @@ class ModTpFile {
     this.C4_SupportLoop,
     this.C4_FusionElectroFarm,
     this.C3_VoidThunderFarm,
-    this.C3_MoonlightFarm,
+    this.C3_MoonlitFarm,
     this.HavocFarm,
     this.FusionFarm,
     this.clearEchoEntireWorld,

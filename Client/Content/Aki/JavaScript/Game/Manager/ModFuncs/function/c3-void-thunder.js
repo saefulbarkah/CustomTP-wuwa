@@ -1,18 +1,13 @@
-const { violetFeatheredHeron, flautist } = require('../data/c3-monster');
+const { flautist, violetFeatheredHeron } = require('../data/c3-monster');
+const { getDailyFarmEchos } = require('./utils/helper');
 
 const C3VoidThunderFarm = () => {
-  const monsterLists = [...flautist, ...violetFeatheredHeron];
-  const monstCount = monsterLists.length;
-  const data = [];
-  for (let index = 0; index < monstCount; index++) {
-    data.push({
-      id: index + 1,
-      filename: ' C3 Void Thunder Farm',
-      ...monsterLists[index],
-    });
-  }
-
-  return data;
+  return getDailyFarmEchos({
+    data: [flautist, violetFeatheredHeron].flat(),
+    filename: ' C3 Void Thunder set',
+  });
 };
+
+console.log(C3VoidThunderFarm());
 
 module.exports = { C3VoidThunderFarm: C3VoidThunderFarm };
