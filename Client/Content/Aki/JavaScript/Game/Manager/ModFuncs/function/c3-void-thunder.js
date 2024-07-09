@@ -7,7 +7,7 @@ const C3VoidThunderFarm = () => {
   for (let index = 0; index < monstCount; index++) {
     data.push({
       id: index + 1,
-      filename: 'C3 Void Thunder Farm',
+      filename: ' C3 Void Thunder Farm',
       ...monsterLists[index],
     });
   }

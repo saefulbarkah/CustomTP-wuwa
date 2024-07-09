@@ -11,7 +11,7 @@ const puerts_1 = require('puerts'),
 const { VoidThunderFarm } = require('./function/c4-void-thunder'),
   { C4SupportFarm } = require('./function/c4-support-farm'),
   { C3VoidThunderFarm } = require('./function/c3-void-thunder'),
-  { C3MoonlightFarm } = require('./function/c3-moonlight-farm'),
+  { C3MoonlitFarm } = require('./function/c3-moonlight-farm'),
   { HavocFarm } = require('./function/farm-echo-set/Havoc'),
   { clearEchoEntireWorld } = require('./function/clearEchoEntireWorld'),
   { FusionFarm } = require('./function/farm-echo-set/Fusion'),
@@ -21,25 +21,27 @@ const { VoidThunderFarm } = require('./function/c4-void-thunder'),
 class ModTpFile {
   static C4_VoidThunderLoop = VoidThunderFarm(50);
   static C4_SupportLoop = C4SupportFarm(50);
+  static C4_FusionElectroFarm = c4FusionElectroBossLoop(99999);
   static C3_VoidThunderFarm = C3VoidThunderFarm();
-  static C3_MoonlightFarm = C3MoonlightFarm();
+  static C3_MoonlightFarm = C3MoonlitFarm();
   static HavocFarm = HavocFarm();
   static FusionFarm = FusionFarm();
-  static clearEchoEntireWorld = clearEchoEntireWorld({
+  static clearEchoEntireWorld = clearEchoEntireWorld();
+  static clearEchoEntireWorldIncludeBoss = clearEchoEntireWorld({
     withBosses: true,
   });
-  static fusionElectroFarm = c4FusionElectroBossLoop(99999);
   static voidThunder = VoidThunder();
 
   static CustomTpList = [
     this.C4_VoidThunderLoop,
     this.C4_SupportLoop,
+    this.C4_FusionElectroFarm,
     this.C3_VoidThunderFarm,
     this.C3_MoonlightFarm,
     this.HavocFarm,
     this.FusionFarm,
     this.clearEchoEntireWorld,
-    this.fusionElectroFarm,
+    this.clearEchoEntireWorldIncludeBoss,
     this.voidThunder,
   ];
 }

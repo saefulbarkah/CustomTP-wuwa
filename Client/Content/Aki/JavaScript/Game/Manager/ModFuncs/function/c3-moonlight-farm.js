@@ -5,7 +5,7 @@ const {
   stoneWallBracer,
 } = require('../data/c3-monster');
 
-const C3MoonlightFarm = () => {
+const C3MoonlitFarm = () => {
   const monsterLists = [
     ...chaserazor,
     ...viridBladeSaurian,
@@ -17,7 +17,7 @@ const C3MoonlightFarm = () => {
   for (let index = 0; index < monstCount; index++) {
     data.push({
       id: index + 1,
-      filename: 'C3 Void Thunder Farm',
+      filename: ' C3 Moonlit Farm',
       ...monsterLists[index],
     });
   }
@@ -25,4 +25,4 @@ const C3MoonlightFarm = () => {
   return data;
 };
 
-module.exports = { C3MoonlightFarm };
+module.exports = { C3MoonlitFarm };

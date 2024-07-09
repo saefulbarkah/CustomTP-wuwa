@@ -87,9 +87,13 @@ const {
 
 const { getDailyFarmEchos } = require('./utils/helper');
 
-const clearEchoEntireWorld = (withBosses) => {
-  if (withBosses) {
+const clearEchoEntireWorld = ({
+  withBosses = false,
+  filename = ' Clear echo entire world',
+} = {}) => {
+  if (withBosses === true) {
     let c4Bosss = [];
+    filename = ' Clear echo entire world Include Boss';
     for (let index = 0; index < listMonster.length; index++) {
       c4Bosss.push(
         FeilianBeringal,
@@ -111,8 +115,8 @@ const clearEchoEntireWorld = (withBosses) => {
     });
   }
   return getDailyFarmEchos({
-    data: [listMonster].flat(),
-    filename: 'Clear echo entire world',
+    data: [listMonster.splice(0, 20)].flat(),
+    filename: filename,
   });
 };
 
