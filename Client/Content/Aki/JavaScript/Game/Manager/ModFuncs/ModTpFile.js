@@ -17,6 +17,7 @@ const { VoidThunderFarm } = require('./function/c4-void-thunder'),
   { FusionFarm } = require('./function/farm-echo-set/Fusion'),
   { VoidThunder } = require('./function/farm-echo-set/voidThunder'),
   { c4FusionElectroBossLoop } = require('./function/c4-char/fusion-electro');
+const { clearEchoCost3 } = require('./function/clearEchoCost3');
 
 class ModTpFile {
   static C4_VoidThunderLoop = VoidThunderFarm(50);
@@ -31,6 +32,7 @@ class ModTpFile {
     withBosses: true,
   });
   static voidThunder = VoidThunder();
+  static clearEchoCost3 = clearEchoCost3();
 
   static CustomTpList = [
     this.C4_VoidThunderLoop,
@@ -43,6 +45,7 @@ class ModTpFile {
     this.clearEchoEntireWorld,
     this.clearEchoEntireWorldIncludeBoss,
     this.voidThunder,
+    this.clearEchoCost3,
   ];
 }
 exports.ModTpFile = ModTpFile;
