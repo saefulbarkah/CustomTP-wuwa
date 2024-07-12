@@ -16,6 +16,7 @@ const { VoidThunderFarm } = require('./function/c4-void-thunder'),
   { clearEchoEntireWorld } = require('./function/clearEchoEntireWorld'),
   { FusionFarm } = require('./function/farm-echo-set/Fusion'),
   { VoidThunder } = require('./function/farm-echo-set/voidThunder'),
+  tigersMaw100 = require('./data/100-exploration/tigers-maw'),
   { c4FusionElectroBossLoop } = require('./function/c4-char/fusion-electro');
 const { clearEchoCost3 } = require('./function/clearEchoCost3');
 
@@ -33,6 +34,7 @@ class ModTpFile {
   });
   static voidThunder = VoidThunder();
   static clearEchoCost3 = clearEchoCost3();
+  static tigersMaw100 = tigersMaw100;
 
   static CustomTpList = [
     this.C4_VoidThunderLoop,
@@ -46,6 +48,7 @@ class ModTpFile {
     this.clearEchoEntireWorldIncludeBoss,
     this.voidThunder,
     this.clearEchoCost3,
+    this.tigersMaw100,
   ];
 }
 exports.ModTpFile = ModTpFile;
