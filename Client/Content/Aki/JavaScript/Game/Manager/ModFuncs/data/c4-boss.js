@@ -1,4 +1,4 @@
-const data = {
+module.exports = {
   Tempest: {
     name: ' Tempest Mephis',
     x: -31645.041015625,
@@ -66,5 +66,3 @@ const data = {
     z: 609.2417602539063,
   },
 };
-
-module.exports = data;
