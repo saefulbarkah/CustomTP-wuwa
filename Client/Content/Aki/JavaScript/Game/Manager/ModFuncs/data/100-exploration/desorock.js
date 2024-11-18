@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Desorock = [
   {
     id: 1,
@@ -956,7 +954,5 @@ const Desorock = [
 ];
 
 module.exports = {
-  desorock100: () => {
-    return getData({ data: Desorock });
-  },
+  Desorock,
 };

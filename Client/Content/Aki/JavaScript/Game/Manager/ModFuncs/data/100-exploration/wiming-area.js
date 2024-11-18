@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Whimming_area = [
   {
     id: 1,
@@ -1419,8 +1417,4 @@ const Whimming_area = [
   },
 ];
 
-module.exports = {
-  wimingArea100: () => {
-    return getData({ data: Whimming_area });
-  },
-};
+module.exports = Whimming_area;

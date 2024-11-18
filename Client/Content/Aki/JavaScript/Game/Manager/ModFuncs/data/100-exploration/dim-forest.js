@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Dim_forest = [
   {
     id: 1,
@@ -883,8 +881,4 @@ const Dim_forest = [
   },
 ];
 
-module.exports = {
-  dimForest100: () => {
-    return getData({ data: Dim_forest });
-  },
-};
+module.exports = Dim_forest;

@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Jinzhou_area = [
   {
     id: 1,
@@ -467,8 +465,4 @@ const Jinzhou_area = [
   },
 ];
 
-module.exports = {
-  jinzhouArea100: () => {
-    return getData({ data: Jinzhou_area });
-  },
-};
+module.exports = Jinzhou_area;

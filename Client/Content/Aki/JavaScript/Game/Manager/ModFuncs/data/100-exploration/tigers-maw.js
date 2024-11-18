@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Tigermaw_area = [
   {
     id: 1,
@@ -467,8 +465,4 @@ const Tigermaw_area = [
   },
 ];
 
-module.exports = {
-  tigerMaw100: () => {
-    return getData({ data: Tigermaw_area });
-  },
-};
+module.exports = Tigermaw_area;

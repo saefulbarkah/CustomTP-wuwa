@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Central_plains = [
   {
     id: 1,
@@ -1563,8 +1561,4 @@ const Central_plains = [
   },
 ];
 
-const centralPlains100 = () => {
-  return getData({ data: Central_plains });
-};
-
-module.exports = centralPlains100;
+module.exports = Central_plains;

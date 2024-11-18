@@ -11,7 +11,7 @@ const {
   Crownless,
 } = require('../data/c4-boss');
 
-const bossC4 = (loop = 50) => {
+const bossC4 = (loop = 5) => {
   const bosses = [
     FeilianBeringal,
     ImpermanenceHeron,
@@ -27,19 +27,22 @@ const bossC4 = (loop = 50) => {
 
   let data = [];
 
+  let idCounter = 1;
+
   for (let index = 0; index < loop; index++) {
-    const bossesWithId = bosses.map((boss) => ({
-      id: index + 1, // Adding `id` for each loop iteration
+    const clonedBosses = bosses.map((boss) => ({
       ...boss,
+      filename: '<color=#03fc6f> All Boss </color>',
+      id: idCounter++,
     }));
-    data.push(...bossesWithId);
+    data = data.concat(clonedBosses);
   }
 
   return data;
 };
 
 module.exports = {
-  bossC4: bossC4(),
+  bossC4,
   Aero: [
     {
       id: 1,

@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Nortfall_area = [
   {
     id: 1,
@@ -603,8 +601,4 @@ const Nortfall_area = [
   },
 ];
 
-module.exports = {
-  NortfallArea100: () => {
-    return getData({ data: Nortfall_area });
-  },
-};
+module.exports = Nortfall_area;

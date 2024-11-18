@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Gorges_area = [
   {
     id: 1,
@@ -411,8 +409,4 @@ const Gorges_area = [
   },
 ];
 
-module.exports = {
-  gorgesArea100: () => {
-    return getData({ data: Gorges_area });
-  },
-};
+module.exports = Gorges_area;

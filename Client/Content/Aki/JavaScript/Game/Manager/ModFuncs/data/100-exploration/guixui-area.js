@@ -1,5 +1,3 @@
-const { getData } = require('../../function/utils/helper');
-
 const Guixui_area = [
   {
     id: 1,
@@ -1147,8 +1145,4 @@ const Guixui_area = [
   },
 ];
 
-module.exports = {
-  guixui100: () => {
-    return getData({ data: Guixui_area });
-  },
-};
+module.exports = Guixui_area;
