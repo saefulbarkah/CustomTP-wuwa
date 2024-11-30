@@ -17,8 +17,6 @@ const {
   Moonlith,
   Spectro,
 } = require('./function/farm-set');
-const Cost_all = require('./function/cost-all');
-const C1_farm = require('./function/c1-farm');
 const Central_plains = require('./data/100-exploration/central-plains');
 const { Desorock } = require('./data/100-exploration/desorock');
 const Tigermaw_area = require('./data/100-exploration/tigers-maw');
@@ -35,11 +33,14 @@ const {
   BlackShore_Under,
 } = require('./data/100-exploration/black-shore');
 const MuterFly_All_in_One = require('./data/100-exploration/Mutterfly-aio');
+const { All_Cost_3 } = require('./function/cost-3-all');
+const { C1_farm } = require('./function/c1-farm');
+const { allEchoes } = require('./function/all-echoes');
 
 class ModTpFile {
   // echos
   static bossC4 = bossC4(10);
-  static costAll = Cost_all;
+  static All_Cost_3 = All_Cost_3;
   static C1_farm = C1_farm;
   static Fusion = Fusion;
   static Aero = Aero;
@@ -48,6 +49,7 @@ class ModTpFile {
   static Havoc = Havoc;
   static Moonlith = Moonlith;
   static Spectro = Spectro;
+  static allEchoes = allEchoes();
 
   // 100% map
   static centralPlains100 = Central_plains;
@@ -68,7 +70,8 @@ class ModTpFile {
   static CustomTpList = [
     // echos
     this.bossC4,
-    this.costAll,
+    this.allEchoes,
+    this.All_Cost_3,
     this.C1_farm,
     this.Fusion,
     this.Aero,
